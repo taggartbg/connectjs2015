@@ -1,4 +1,5 @@
 import React from 'react';
 import App from './App';
+import List from './List';
 
-React.render(<App />, document.getElementById('root'));
+React.render(<List />, document.getElementById('root'));
