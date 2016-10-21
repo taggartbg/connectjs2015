@@ -11,33 +11,33 @@ export default class List extends React.Component {
         this.state = { myData: [
                                     {
                                         title: "Intro to React",
-                                        speaker: "Taggart Bowen-Gaddy",
-                                        time: "10:00am"
+                                        speaker: "Taggart & Andrew",
+                                        time: "10:10am"
                                     },
                                     {
-                                        title: "Lets talk about Flux",
-                                        speaker: "Andrew Smith",
-                                        time: "11:00am"
+                                        title: "Navigating the React Ecosystem",
+                                        speaker: "Ben Ilegbodu",
+                                        time: "11:20am"
                                     },
                                     {
-                                        title: "Dataflow through React",
+                                        title: "Making Designers Happy with React",
+                                        speaker: "Brian Douglas",
+                                        time: "1:20pm"
+                                    },
+                                    {
+                                        title: "Testing React",
+                                        speaker: "Kent C. Dodds",
+                                        time: "2:30pm"
+                                    },
+                                    {
+                                        title: "Building distributed systems with Redux",
                                         speaker: "Clint Ayres",
-                                        time: "1:00pm"
+                                        time: "4:00pm"
                                     },
                                     {
-                                        title: "Building HUGE Flux Applications",
-                                        speaker: "Jordan Garcia",
-                                        time: "2:00pm"
-                                    },
-                                    {
-                                        title: "Exploring React Native",
-                                        speaker: "Josh Jensen",
-                                        time: "3:30pm"
-                                    },
-                                    {
-                                        title: "Why is React Functional",
-                                        speaker: "John K Paul",
-                                        time: "4:30pm"
+                                        title: "Isomorphic React w/o Node??",
+                                        speaker: "Ben Ilegbodu",
+                                        time: "5:10pm"
                                     }
                                 ]
                     }
@@ -47,7 +47,7 @@ export default class List extends React.Component {
         return (
             <div className="list">
                 <div className="list-title" onClick={ this.updateData }>
-                    React Track - Connect JS
+                    React Track - Connect.Tech
                 </div>
                 <div className="list-items">
                     { this.state.myData.map(datum => (<ListItem itemData={ datum } key={ datum.title } />))}
@@ -109,4 +109,3 @@ class ListItem extends React.Component {
         });
     }
 }
-
